@@ -1,10 +1,10 @@
 * {
    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
    font-family: Verdana;
 }
 
@@ -12,27 +12,61 @@ body {
    height: 100vh;
    box-sizing: border-box;
 }
-main {
-   text-align: center;
-}
+
+/* Topo da página */
 header {
    display: flex;
    align-items: center;
 }
+
 header img {
    width: 150px;
 }
+
 nav {
    flex: 1;
    text-align: center;
    font-size: 20px;
 }
 
-.footer {
+nav a {
+   color: #1351d8;
+   text-decoration: none;
+}
+
+/* Conteúdo da página */
+main {
+   text-align: center;
+   margin: 5%;
+}
+
+.pagina-inicial img {
+   width: 90%;
+}
+
+iframe {
+   width: 100%;
+   height: 480px;
+}
+
+table {
+   justify-self: center;
+}
+
+td,
+th {
+   text-align: center;
+   padding: 8px;
+   border-collapse: collapse;
+}
+
+/* Pé da página */
+footer {
    position: static;
+   z-index: 3;
    bottom: 0;
    left: 0;
-   bottom: 0;
+   right: 0;
    width: 100%;
    background-color: #1b357e;
    color: white;
@@ -41,6 +75,7 @@ nav {
    display: flex;
    align-items: center;
 }
+
 .links {
    display: flex;
    gap: 10px;
@@ -49,22 +84,12 @@ nav {
    vertical-align: text-top;
    align-items: center;
 }
+
 .links img {
    width: 20px;
 }
+
 .copyright {
    text-align: center;
    flex-grow: 2;
-}
-a:link {
-   color: #1351d8;
-   text-decoration: none;
-}
-a:hover {
-   color: #1351d8;
-   text-decoration: none;
-}
-a:visited {
-   color: #1351d8;
-   text-decoration: none;
 }
