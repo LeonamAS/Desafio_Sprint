@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <link rel="stylesheet" href="css/test2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ford - Contato</title>
 </head>
+
 <body>
     <header>
-        <img src="img/logo-ford-256.png" alt="Logomarca Ford">
+        <a href="index.html"><img src="img/logo-ford-256.png" alt="Logomarca Ford"></a>
         <nav>
             <a href="index.html">Home</a>
             <a href="lancamento.html">Lançamento</a>
@@ -17,8 +19,28 @@
     </header>
 
     <main>
-
+        <section class="contato">
+            <div>
+                <img src="img/xls 2.2 diesel.jpg" alt="Ranger XLS">
+            </div>
+            <div class="formulario">
+                <form action="">
+                    <label for="fname">Sobre Você</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="NOME"><br>
+                    <input type="text" id="lname" name="lname" placeholder="E-MAIL"><br>
+                    <input type="text" id="lname" name="lname" placeholder="TELEFONE"><br>
+                    <input type="text" id="lname" name="lname" placeholder="CPF"><br>
+                    <input type="text" id="lname" name="lname" placeholder="SOBRENOME"><br>
+                    <select name="Opções" id="Opções">
+                        <option value="E-MAIL">E-MAIL</option>
+                        <option value="TELEFONE">TELEFONE</option>
+                    </select><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
     </main>
+
     <footer>
         <div class="links">
             <p>Redes Sociais </p>
@@ -37,4 +59,5 @@
         </div>
     </footer>
 </body>
+
 </html>

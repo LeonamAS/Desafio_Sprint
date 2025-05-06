@@ -17,6 +17,8 @@ body {
 header {
    display: flex;
    align-items: center;
+   padding: 10px;
+   box-shadow: #000000c0;
 }
 
 header img {
@@ -24,9 +26,12 @@ header img {
 }
 
 nav {
+   display: flex;
    flex: 1;
-   text-align: center;
-   font-size: 20px;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
+   font-size: 25px;
 }
 
 nav a {
@@ -49,20 +54,63 @@ iframe {
    height: 480px;
 }
 
-table {
+.contato {
+   display: flex;
    justify-self: center;
+}
+
+/* Tabela */
+.tabela {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+table {
+   margin: 5px;
 }
 
 td,
 th {
-   text-align: center;
+   text-align: left;
+   vertical-align: middle;
    padding: 8px;
    border-collapse: collapse;
 }
 
+/* Formulário */
+.formulario {
+   flex-wrap: wrap;
+}
+
+input[type=text],
+select {
+   width: 100%;
+   padding: 6px;
+   margin: 3px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+   font-size: small;
+}
+input[type=submit] {
+   width: 50%;
+   background-color: #1351d8;
+   color: white;
+   padding: 6px;
+   margin: 3px 0;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ input[type=submit]:hover {
+   background-color: #3573fafe;
+ }
+
 /* Pé da página */
 footer {
-   position: static;
+   position: sticky;
    z-index: 3;
    bottom: 0;
    left: 0;
@@ -91,5 +139,5 @@ footer {
 
 .copyright {
    text-align: center;
-   flex-grow: 2;
+   flex-grow: 1;
 }
