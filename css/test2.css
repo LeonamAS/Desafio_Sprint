@@ -2,7 +2,6 @@
    margin: 0;
    padding: 0;
    border: 0;
-   font-size: 100%;
    font: inherit;
    vertical-align: baseline;
    font-family: Verdana;
@@ -18,7 +17,7 @@ header {
    display: flex;
    align-items: center;
    padding: 10px;
-   box-shadow: #000000c0;
+   box-shadow: 0 3px rgb(196, 196, 196);
 }
 
 header img {
@@ -31,7 +30,7 @@ nav {
    flex-wrap: wrap;
    justify-content: center;
    gap: 30px;
-   font-size: 25px;
+   font-size: 20px;
 }
 
 nav a {
@@ -54,9 +53,19 @@ iframe {
    height: 480px;
 }
 
+/* Página de contato */
 .contato {
    display: flex;
-   justify-self: center;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.contato img {
+   margin: 10px;
+}
+
+.formulario {
+   margin: 10px;
 }
 
 /* Tabela */
@@ -78,6 +87,31 @@ th {
    border-collapse: collapse;
 }
 
+/* Botão */
+.button {
+   background-color: #1351d8;
+   border: none;
+   color: white;
+   padding: 10px 40px;
+   text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+   border-radius: 5px;
+   margin: 10px;
+   transition-duration: 0.4s;
+   box-shadow: 0 5px gray;
+}
+
+.button:hover {
+   background-color: #3573fafe;
+}
+
+.button:active {
+   background-color: #1351d8;
+   box-shadow: 0 5px rgb(49, 49, 49);
+   transform: translateY(4px);
+}
+
 /* Formulário */
 .formulario {
    flex-wrap: wrap;
@@ -94,6 +128,7 @@ select {
    box-sizing: border-box;
    font-size: small;
 }
+
 input[type=submit] {
    width: 50%;
    background-color: #1351d8;
@@ -103,15 +138,28 @@ input[type=submit] {
    border: none;
    border-radius: 5px;
    cursor: pointer;
- }
- input[type=submit]:hover {
+   box-shadow: 0 3px gray;
+}
+
+input[type=submit]:hover {
    background-color: #3573fafe;
- }
+}
+
+input[type=submit]:active {
+   background-color: #1351d8;
+   box-shadow: 0 3px rgb(49, 49, 49);
+   transform: translateY(4px);
+}
+
+/* Espaço no fim da página */
+.fim-da-pagina {
+   padding: 50px;
+}
 
 /* Pé da página */
 footer {
-   position: sticky;
-   z-index: 3;
+   position: fixed;
+   z-index: 1;
    bottom: 0;
    left: 0;
    right: 0;
