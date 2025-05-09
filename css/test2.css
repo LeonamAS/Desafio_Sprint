@@ -43,6 +43,7 @@ nav a {
 /* Conteúdo da página */
 main {
    text-align: center;
+   font-size: 14px;
    flex: 1;
 }
 
@@ -51,12 +52,12 @@ main {
 }
 
 .pagina-inicial img {
-   width: 90%;
+   width: 70%;
 }
 
 iframe {
    width: 100%;
-   height: 480px;
+   height: 450px;
 }
 
 /* Página de contato */
@@ -96,6 +97,7 @@ th {
 
 .nome-carro {
    color: #1351d8;
+   font-variant: small-caps;
    font-weight: bold;
 }
 
@@ -132,11 +134,11 @@ th {
    border-radius: 5px;
 }
 
-.seletor:hover input ~ .checkmark {
+.seletor:hover input~.checkmark {
    background-color: #ccc;
 }
 
-.seletor input:checked  ~ .checkmark {
+.seletor input:checked~.checkmark {
    background-color: #1351d8;
 }
 
@@ -146,7 +148,7 @@ th {
    display: none;
 }
 
-.seletor input:checked ~ .checkmark::after {
+.seletor input:checked~.checkmark::after {
    display: block;
 }
 
@@ -165,6 +167,7 @@ th {
 /* Botão */
 .botao {
    margin-top: 10px;
+   margin-bottom: 70px;
 }
 
 .button {
@@ -233,7 +236,6 @@ input[type=submit]:active {
 /* Pé da página */
 footer {
    position: fixed;
-   z-index: 1;
    bottom: 0;
    left: 0;
    right: 0;
@@ -244,13 +246,13 @@ footer {
    padding: 10px;
    display: flex;
    align-items: center;
+   justify-content: space-between;
 }
 
 .links {
    display: flex;
    gap: 10px;
    text-align: left;
-   flex-grow: 1;
    vertical-align: text-top;
    align-items: center;
 }
@@ -261,11 +263,11 @@ footer {
 
 .copyright {
    font-size: 12px;
-   flex-grow: 10;
    text-align: center;
 }
 
-.logo {
+.logo img {
    text-align: center;
-   flex-grow: 2;
+   width: 70px;
+   padding-right: 100px;
 }
