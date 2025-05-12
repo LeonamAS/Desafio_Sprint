@@ -7,6 +7,10 @@
    font-family: Verdana;
 }
 
+@media (max-width: 720px) {
+
+}
+
 body {
    height: 100%;
    display: flex;
@@ -16,6 +20,7 @@ body {
 
 /* 1 - Topo da página */
 header {
+   display: flex;
    padding: 12px;
    box-shadow: 0 3px rgb(196, 196, 196);
 }
@@ -35,12 +40,12 @@ nav {
 
 nav a {
    color: #1351d8;
+   font-weight: bold;
    text-decoration: none;
 }
 
 .menu {
    display: flex;
-   flex: 1;
    justify-content: center;
    gap: 30px;
 }
@@ -48,7 +53,6 @@ nav a {
 main {
    text-align: center;
    font-size: 14px;
-   flex: 1;
 }
 
 /* 2 - Pagina inicial */
@@ -68,8 +72,8 @@ iframe {
 
 .descricao {
    padding: 1% 8%;
-   text-align: left;
-   font-size: 14px;
+   text-align: center;
+   font-size: 16px;
 }
 
 /* Tabela */
@@ -199,22 +203,23 @@ th {
 
 .contato img {
    margin: 10px;
+   width: 400px;
 }
 
 /* Formulário */
 .formulario {
-   width: 250px;
+   width: 300px;
 }
 
 label {
    font-weight: bold;
 }
 
-input[type=text],
+input,
 select,
 textarea {
    width: 100%;
-   padding: 6px;
+   padding: 10px;
    margin: 3px 0;
    display: inline-block;
    border: 1px solid #ccc;
@@ -227,10 +232,7 @@ input[type=submit] {
    width: 50%;
    background-color: #1351d8;
    color: white;
-   padding: 6px;
-   margin: 3px 0;
    border: none;
-   border-radius: 5px;
    cursor: pointer;
    box-shadow: 0 3px gray;
 }
@@ -247,7 +249,7 @@ input[type=submit]:active {
 
 /* 5 - Pé da página */
 footer {
-   /* position: fixed; */
+   position: fixed;
    bottom: 0;
    left: 0;
    right: 0;
@@ -281,5 +283,5 @@ footer {
 .logo img {
    text-align: center;
    width: 70px;
-   padding-right: 100px;
+   padding: 0 70px;
 }
