@@ -7,27 +7,6 @@
    font-family: Verdana;
 }
 
-@media (max-width: 720px) {
-   header {
-      display: flex;
-      justify-content: center;
-   }
-
-   nav {
-      display: flex;
-      flex-direction: column;
-   }
-
-   .menu {
-      display: flex;
-      flex-direction: column;
-   }
-
-   .main-logo img {
-      max-width: 200px;
-   }
-}
-
 body {
    height: 100%;
    display: flex;
@@ -43,23 +22,20 @@ main {
 /* 1 - Topo da página */
 header {
    display: flex;
-   justify-content: space-between;
+   /* justify-content: center; */
+   align-items: center;
    padding: 12px;
    box-shadow: 0 3px rgb(196, 196, 196);
 }
 
-.main-logo img {
+header img {
    max-width: 140px;
 }
 
 nav {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   margin: 0 14px;
+   flex: 1;
+   margin-right: 10%;
    font-size: 20px;
-
-   margin-inline: 10px 20%;
 }
 
 nav a {
@@ -70,6 +46,7 @@ nav a {
 
 .menu {
    display: flex;
+   justify-content: center;
    gap: 30px;
 }
 
@@ -80,6 +57,7 @@ nav a {
 
 .pagina-inicial img {
    width: 70%;
+   border-radius: 10px;
 }
 
 /* 3 - Página do lançamento */
@@ -303,4 +281,48 @@ footer {
    text-align: center;
    width: 70px;
    padding: 0 70px;
+}
+
+@media (max-width: 768px) {
+   
+   /* 1 - Topo da página */ 
+   header {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+   }
+
+   nav {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+   }
+
+   .menu {
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+   }
+
+   .menu a {
+      padding: 10px;
+   }
+
+   header img {
+      max-width: 140px;
+   }
+
+   main, .pagina-inicial {
+      margin-bottom: 100px;
+   }
+
+   /* 2 - Página Lançamento */
+   .tabela {
+      gap: 30px;
+   }
+
+   .button {
+      margin-top: 30px;
+      width: 40%;
+   }
 }
