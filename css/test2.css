@@ -8,7 +8,24 @@
 }
 
 @media (max-width: 720px) {
+   header {
+      display: flex;
+      justify-content: center;
+   }
 
+   nav {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .menu {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .main-logo img {
+      max-width: 200px;
+   }
 }
 
 body {
@@ -18,24 +35,31 @@ body {
    box-sizing: border-box;
 }
 
+main {
+   text-align: center;
+   font-size: 14px;
+}
+
 /* 1 - Topo da página */
 header {
    display: flex;
+   justify-content: space-between;
    padding: 12px;
    box-shadow: 0 3px rgb(196, 196, 196);
 }
 
 .main-logo img {
-   max-width: 50%;
+   max-width: 140px;
 }
 
 nav {
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
    align-items: center;
    margin: 0 14px;
    font-size: 20px;
+
+   margin-inline: 10px 20%;
 }
 
 nav a {
@@ -46,13 +70,7 @@ nav a {
 
 .menu {
    display: flex;
-   justify-content: center;
    gap: 30px;
-}
-
-main {
-   text-align: center;
-   font-size: 14px;
 }
 
 /* 2 - Pagina inicial */
@@ -278,6 +296,7 @@ footer {
 .copyright {
    font-size: 12px;
    text-align: center;
+   padding: 0 10px;
 }
 
 .logo img {
