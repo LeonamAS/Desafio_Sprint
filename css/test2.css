@@ -22,7 +22,6 @@ main {
 /* 1 - Topo da página */
 header {
    display: flex;
-   /* justify-content: center; */
    align-items: center;
    padding: 12px;
    box-shadow: 0 3px rgb(196, 196, 196);
@@ -34,7 +33,7 @@ header img {
 
 nav {
    flex: 1;
-   margin-right: 10%;
+   margin-right: 140px;
    font-size: 20px;
 }
 
@@ -85,12 +84,15 @@ table {
    font-size: 14px;
 }
 
-td,
 th {
-   text-align: left;
+   text-align: center;
    vertical-align: middle;
-   padding: 0 8px;
    border-collapse: collapse;
+}
+
+td {
+   text-align: left;
+   padding: 0 10px;
 }
 
 .nome-carro {
@@ -165,13 +167,14 @@ th {
 
 /* Botão "Comparar" */
 .button {
-   background-color: #1351d8;
    border: none;
-   color: white;
-   padding: 10px 40px;
    text-align: center;
    text-decoration: none;
    cursor: pointer;
+   color: white;
+   background-color: #1351d8;
+   width: 200px;
+   padding: 10px 40px;
    border-radius: 5px;
    margin-top: 20px;
    margin-bottom: 70px;
@@ -181,6 +184,7 @@ th {
 
 .button:hover {
    background-color: #3573fafe;
+   width: 230px;
 }
 
 .button:active {
@@ -235,6 +239,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
    background-color: #3573fafe;
+   transition-duration: 0.4s;
+   width: 60%;
 }
 
 input[type=submit]:active {
@@ -283,13 +289,18 @@ footer {
    padding: 0 70px;
 }
 
+/* Media Quearies*/
 @media (max-width: 768px) {
-   
-   /* 1 - Topo da página */ 
+
+   /* 1 - Topo da página */
    header {
       display: flex;
       justify-content: center;
       flex-direction: column;
+   }
+
+   header img {
+      width: 90px;
    }
 
    nav {
@@ -311,18 +322,26 @@ footer {
    header img {
       max-width: 140px;
    }
-
-   main, .pagina-inicial {
+   /* 2 - Página Inicial */
+   main,
+   .pagina-inicial {
       margin-bottom: 100px;
    }
 
-   /* 2 - Página Lançamento */
+   .pagina-inicial img {
+      width: 100%;
+   }
+
+   /* 3 - Página Lançamento */
+   .descricao {
+      font-size: 14px;
+   }
+
    .tabela {
       gap: 30px;
    }
 
    .button {
       margin-top: 30px;
-      width: 40%;
    }
 }
