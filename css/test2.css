@@ -80,6 +80,7 @@ iframe {
 }
 
 table {
+   width: 365px;
    margin: 5px;
    font-size: 14px;
 }
@@ -266,6 +267,7 @@ footer {
 }
 
 .links {
+   width: 200px;
    display: flex;
    gap: 10px;
    text-align: left;
@@ -283,13 +285,17 @@ footer {
    padding: 0 10px;
 }
 
+.logo {
+   width: 200px;
+}
+
 .logo img {
    text-align: center;
    width: 70px;
    padding: 0 70px;
 }
 
-/* Media Quearies*/
+/* Media Quearies */
 @media (max-width: 768px) {
 
    /* 1 - Topo da página */
@@ -343,5 +349,23 @@ footer {
 
    .button {
       margin-top: 30px;
+   }
+
+   /* 4 - Pé da página */
+   .links {
+      display: flex;
+      justify-content: center;
+   }
+
+   .links p {
+      display:none;
+   }
+
+   .links img {
+      width: 30px;
+   }
+
+   .copyright {
+      display: none;
    }
 }
